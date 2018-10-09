@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body class="mdc-typography">
+        {{- partial "header.html" . -}}
+        <div id="content" class="mdc-typography">
+        {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script defer="" async="" src="//www.instagram.com/embed.js" id="instagram-embed-script"></script>
+        {{ template "_internal/google_analytics_async.html" . }}
+    </body>
+</html>
